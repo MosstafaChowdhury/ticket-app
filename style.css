@@ -1,0 +1,39 @@
+hr{
+    
+    border: dotted white;
+   
+    
+}
+.seats{
+    background-color: yellow;
+}
+
+li{
+display: flex;
+justify-content: space-around;
+}
+
+
+form input{
+    padding: 10px 0px;
+    border: none;
+    width: 300px;
+    outline: none;
+}
+
+
+ form button{
+    padding: 10px 30px;
+    background: rgba(0, 128, 0, 0.675);
+    border: none;
+     color: white;
+     font-size: 17px;
+     text-transform: capitalize;
+    outline: none;
+    border-radius:0px 10px 10px 0px;
+}
+
+
+.anableBtn{
+    background-color: red;
+}
