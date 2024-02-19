@@ -201,7 +201,13 @@ const number=e.target.value;
 
 deletebtn.addEventListener("click",function(e){
     e.preventDefault()
-    document.location.reload()
+})
+
+
+const modalclose=document.getElementById("modalclose")
+modalclose.addEventListener("click",function(){
+  
+    document.location.reload() 
 })
 
 
