@@ -15,17 +15,17 @@ for (const card of cards){
         if(converCounseat ===4){
            card.innerText.setAttribute("disabled",true)
         }else if(newSeats.includes(card.innerText)!==true){
-            const ulcontainer=document.getElementById("ul-container")
-            const li=document.createElement("li")
-            const p=document.createElement("p")
-            const p2=document.createElement("p")
-            const p3=document.createElement("p")
-            p.innerText=card.innerText;
-            p2.innerText="Classis";
-            p3.innerText=500;
-            li.appendChild(p)
-            li.appendChild(p2)
-            li.appendChild(p3)
+            const ulcontainer=document.getElementById("table-container")
+            const tr=document.createElement("tr")
+            const td=document.createElement("td")
+            const td2=document.createElement("td")
+            const td3=document.createElement("td")
+            td.innerText=card.innerText;
+            td2.innerText="Classis";
+            td3.innerText=500;
+            tr.appendChild(td)
+            tr.appendChild(td2)
+            tr.appendChild(td3)
 
 
             const currentTotalPrice=elementByIds("totalCostPrice")
@@ -39,7 +39,7 @@ for (const card of cards){
    setText("totalCostPrice",totalCost)
    setText("GrandtotalCostPrice",grandtotalCostPrice)
           
-            ulcontainer.appendChild(li)
+            ulcontainer.appendChild(tr)
             newSeats.push(card.innerText) 
            console.log(newSeats)
            totalSeat.innerText=allseats -1;
@@ -199,8 +199,9 @@ const number=e.target.value;
 })
 
 
-deletebtn.addEventListener("click",function(){
-    document.location.reload(true)
+deletebtn.addEventListener("click",function(e){
+    e.preventDefault()
+    document.location.reload()
 })
 
 
