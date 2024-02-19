@@ -98,7 +98,6 @@ const applyBtn=document.getElementById("applyBtn")
     const coupon=document.getElementById("couponValue")
     const cuponValue=coupon.value;
     console.log(cuponValue)
-
     
     const grandtotal=elementByIds("GrandtotalCostPrice")
     console.log(grandtotal)
@@ -118,6 +117,7 @@ const applyBtn=document.getElementById("applyBtn")
         const tax=15;
         const totalTax=(grandtotal/100)*tax;
        const grandTotalAfterText=grandtotal-totalTax;
+      
        setText("GrandtotalCostPrice",grandTotalAfterText)
        cuponContainer.classList.add("hidden")
   
@@ -126,6 +126,7 @@ const applyBtn=document.getElementById("applyBtn")
         const tax=20;
         const totalTax=(grandtotal/100)*tax;
        const grandTotalAfterText=grandtotal-totalTax;
+       
        setText("GrandtotalCostPrice",grandTotalAfterText)
        cuponContainer.classList.add("hidden")
 
