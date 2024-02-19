@@ -113,13 +113,13 @@ const applyBtn=document.getElementById("applyBtn")
      const selectedSeat=newSeats;
      console.log(selectedSeat.length)
 
-    if(cuponValue ==="new15" && selectedSeat.length===4){
+    if(cuponValue ==="NEW15" && selectedSeat.length===4){
 
         const tax=15;
         const totalTax=(grandtotal/100)*tax;
        const grandTotalAfterText=grandtotal-totalTax;
        setText("GrandtotalCostPrice",grandTotalAfterText)
-
+       cuponContainer.classList.add("hidden")
   
     }
     else if(cuponValue ==="Couple 20" && selectedSeat.length===4){
